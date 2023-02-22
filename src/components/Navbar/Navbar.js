@@ -1,6 +1,7 @@
 import React from 'react'
 import './navbar.scss'
 //import { useLocation } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 export default function Navbar() {
     //const location = useLocation()
@@ -8,8 +9,12 @@ export default function Navbar() {
     return (
         <nav className="navbar">
             <ul className="navbar_list">
-                <li className="navbar_list_item">Hébergements</li>
-                <li className="navbar_list_item">Activités</li>
+                <li className="navbar_list_item">
+                    <Link to="DavidIsidore/booki/hebergements" />{' '}
+                </li>
+                <li className="navbar_list_item">
+                    <Link to="DavidIsidore/booki/activites" />{' '}
+                </li>
             </ul>
         </nav>
     )

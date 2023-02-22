@@ -1,1 +1,7 @@
 @import '../../sass/main.scss';
+
+.header {
+    @include flex(row, space-between, center);
+    width: 90%;
+    margin: 0 auto;
+}
