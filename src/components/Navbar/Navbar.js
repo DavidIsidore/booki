@@ -10,10 +10,12 @@ export default function Navbar() {
         <nav className="navbar">
             <ul className="navbar_list">
                 <li className="navbar_list_item">
-                    <Link to="DavidIsidore/booki/hebergements" />{' '}
+                    <Link to="DavidIsidore/booki/hebergements" />
+                    Hébergements
                 </li>
                 <li className="navbar_list_item">
-                    <Link to="DavidIsidore/booki/activites" />{' '}
+                    <Link to="DavidIsidore/booki/activites" />
+                    Activités
                 </li>
             </ul>
         </nav>
