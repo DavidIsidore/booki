@@ -58,7 +58,7 @@ export default function Search() {
                 <button
                     className={
                         screenWidth > 992
-                            ? 'search_loupe'
+                            ? 'search_look'
                             : 'search_loupe_display'
                     }
                 >
