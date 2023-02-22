@@ -2,12 +2,12 @@
 
 .navbar {
     @include flex;
-    width: 250px;
+    width: 300px;
     height: 80px;
     @include flex(row, center, center);
     &_list {
         @include flex(row, space-between, center);
-        width: 250px;
+        width: 300px;
         height: 80px;
         padding: 0px;
         &_item {

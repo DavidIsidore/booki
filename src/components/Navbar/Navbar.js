@@ -9,13 +9,14 @@ export default function Navbar() {
     return (
         <nav className="navbar">
             <ul className="navbar_list">
+                {/*<li className="navbar_list_item">
+                    <Link to="/">Accueil</Link>
+                </li>*/}
                 <li className="navbar_list_item">
-                    <Link to="DavidIsidore/booki/hebergements" />
-                    Hébergements
+                    <Link to="/hebergement">Hébergements</Link>
                 </li>
                 <li className="navbar_list_item">
-                    <Link to="DavidIsidore/booki/activites" />
-                    Activités
+                    <Link to="/activites">Activités</Link>
                 </li>
             </ul>
         </nav>
