@@ -7,6 +7,13 @@
 a {
     text-decoration: none;
 }
+a:visited {
+    color: black;
+}
+
+a:hover {
+    text-decoration: overline $color-primary;
+}
 
 li {
     list-style: none;
