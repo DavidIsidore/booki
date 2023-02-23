@@ -13,21 +13,21 @@ export default function Filters() {
         <div className="filters">
             <div>
                 <h3>Filtres</h3>
-                <div>
+                <div className="filters_select">
                     {/*ici lesfiltres*/}
-                    <div>
+                    <div className="filters_select_single">
                         <FontAwesomeIcon icon={faMoneyBill1Wave} />
                         <span>Économique</span>
                     </div>
-                    <div>
+                    <div className="filters_select_single">
                         <FontAwesomeIcon icon={faChildReaching} />
                         <span>Familial</span>
                     </div>
-                    <div>
+                    <div className="filters_select_single">
                         <FontAwesomeIcon icon={faHeart} />
                         <span>Romantique</span>
                     </div>
-                    <div>
+                    <div className="filters_select_single">
                         <FontAwesomeIcon icon={faDog} />
                         <span>Animaux autorisés</span>
                     </div>
