@@ -1,8 +1,32 @@
 import React from 'react'
-import locate from '../../assets/icons/location-dot-solid.svg'
-import loupe from '../../assets/icons/loupe.svg'
+//import locate from '../../assets/icons/location-dot-solid.svg'
+//import loupe from '../../assets/icons/loupe.svg'
 import './search.scss'
 import { useState, useEffect } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+//import { library } from '@fortawesome/fontawesome-svg-core'
+/*import {
+    faChildReaching,
+    faCircle,
+    faDog,
+    faHeart,
+    faInfo,
+    faLocationDot,
+    faMagnifyingGlass,
+    faMoneyBill1Wave,
+} from '@fortawesome/free-solid-svg-icons'
+library.add(
+    faCircle,
+    faLocationDot,
+    faMagnifyingGlass,
+    faMoneyBill1Wave,
+    faChildReaching,
+    faHeart,
+    faDog,
+    faInfo
+)*/
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 
 export default function Search() {
     function useWindowSize() {
@@ -28,7 +52,7 @@ export default function Search() {
 
             window.addEventListener('resize', handleResize)
             return () => window.removeEventListener('resize', handleResize)
-        }, []) // Empty array ensures that effect is only run on mount and unmount
+        }) // Empty array ensures that effect is only run on mount and unmount
 
         return windowSize
     }
@@ -37,12 +61,13 @@ export default function Search() {
     console.log(screenWidth)
     return (
         <form className="search">
-            <div>
-                <img
+            <div className="locate">
+                {/*<img
                     className="search_locate"
                     src={locate}
                     alt="location icon"
-                />
+                />*/}
+                <FontAwesomeIcon icon={faLocationDot} />
             </div>
             <input className="search_input" type="text" name="search"></input>
             <div>
@@ -53,7 +78,8 @@ export default function Search() {
                             : 'search_loupe_display'
                     }
                 >
-                    <img alt="loupe" src={loupe} />
+                    {/*<img alt="loupe" src={loupe} />*/}
+                    <FontAwesomeIcon icon={faMagnifyingGlass} />
                 </button>
                 <button
                     className={

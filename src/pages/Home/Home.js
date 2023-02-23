@@ -4,6 +4,7 @@ import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import Intro from '../../components/Intro/Intro'
 import Search from '../../components/Search/Search'
+import Filters from '../../components/Filters/Filters'
 
 export default function Home() {
     const location = useLocation()
@@ -16,6 +17,7 @@ export default function Home() {
             <Header />
             <Intro />
             <Search />
+            <Filters />
         </main>
     )
 }
