@@ -58,16 +58,13 @@ export default function Search() {
     }
 
     const screenWidth = useWindowSize().width
-    console.log(screenWidth)
     return (
         <form className="search">
-            <div className="locate">
-                {/*<img
-                    className="search_locate"
-                    src={locate}
-                    alt="location icon"
-                />*/}
-                <FontAwesomeIcon icon={faLocationDot} />
+            <div className="search_locate">
+                <FontAwesomeIcon
+                    icon={faLocationDot}
+                    className="search_locate_dot"
+                />
             </div>
             <input className="search_input" type="text" name="search"></input>
             <div>

@@ -7,8 +7,6 @@ import Search from '../../components/Search/Search'
 import Filters from '../../components/Filters/Filters'
 
 export default function Home() {
-    const location = useLocation()
-    console.log(location)
     useEffect(() => {
         document.title = 'Accueil'
     })
