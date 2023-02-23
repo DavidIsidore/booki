@@ -12,23 +12,43 @@ export default function Filters() {
     return (
         <div className="filters">
             <div>
-                <h3>Filtres</h3>
                 <div className="filters_select">
+                    <h3>Filtres</h3>
                     {/*ici lesfiltres*/}
                     <div className="filters_select_single">
-                        <FontAwesomeIcon icon={faMoneyBill1Wave} />
+                        <div className="z">
+                            <FontAwesomeIcon
+                                icon={faMoneyBill1Wave}
+                                className="filters_select_single_icon"
+                            />
+                        </div>
                         <span>Économique</span>
                     </div>
                     <div className="filters_select_single">
-                        <FontAwesomeIcon icon={faChildReaching} />
+                        <div className="z">
+                            <FontAwesomeIcon
+                                icon={faChildReaching}
+                                className="filters_select_single_icon"
+                            />
+                        </div>
                         <span>Familial</span>
                     </div>
                     <div className="filters_select_single">
-                        <FontAwesomeIcon icon={faHeart} />
+                        <div className="z">
+                            <FontAwesomeIcon
+                                icon={faHeart}
+                                className="filters_select_single_icon"
+                            />
+                        </div>
                         <span>Romantique</span>
                     </div>
                     <div className="filters_select_single">
-                        <FontAwesomeIcon icon={faDog} />
+                        <div className="z">
+                            <FontAwesomeIcon
+                                icon={faDog}
+                                className="filters_select_single_icon"
+                            />
+                        </div>
                         <span>Animaux autorisés</span>
                     </div>
                 </div>
