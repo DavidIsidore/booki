@@ -6,32 +6,97 @@
     position: relative;
     top: 140px;
     @include flex(column, start, stretch);
+    //flex-wrap: wrap;
     &_select {
         @include flex(row, space-between, center);
-        width: 80%;
+        flex-wrap: wrap;
+        width: 90%;
         &_single {
             position: relative;
             @include flex(row, space-around, center);
-            border: 1px solid black;
+            border: 1px solid $color-secondary;
             border-radius: 25px;
             width: 200px;
+            height: 50px;
+            display: flex;
+            margin-left: 5px;
+            margin-right: 5px;
+            //align-items: center;
+            &_div {
+                width: 50px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                background-color: $color-secondary;
+                border-radius: 25px;
+                position: absolute;
+                left: 0px;
+                &_icon {
+                    display: flex;
+                    position: absolute;
+                    top: 15px;
+                }
+            }
+            &_text {
+                font-size: 1.2em;
+                padding-left: 10px;
+                span {
+                    padding-left: 10px;
+                }
+            }
+        }
+        &_single:hover {
+            background-color: $color-primary;
+        }
+        &_animaux {
+            position: relative;
+            @include flex(row, space-around, center);
+            border: 1px solid $color-secondary;
+            border-radius: 25px;
+            width: 300px;
             height: 50px;
             display: flex;
             margin-left: 10px;
             margin-right: 10px;
             //align-items: center;
-            &_icon {
+            &_div {
+                width: 50px;
+                height: 50px;
                 display: flex;
+                justify-content: center;
+                background-color: $color-secondary;
+                border-radius: 25px;
                 position: absolute;
-                top: 15px;
-                background-color: $color-primary;
+                left: 0px;
+                &_icon {
+                    display: flex;
+                    position: absolute;
+                    top: 15px;
+                }
             }
+            &_text {
+                font-size: 1.2em;
+                padding-left: 10px;
+                span {
+                    padding-left: 10px;
+                }
+            }
+        }
+        &_animaux:hover {
+            background-color: $color-primary;
         }
     }
 }
-.z {
-    width: 50px;
+
+.animaux {
+    width: 400px;
+}
+/*.y:hover {
+    background-color: $color-primary;
+}
+.y {
     height: 50px;
     display: flex;
-    justify-content: center;
-}
+    align-items: center;
+    border-radius: 0 25px 25px 0;
+}*/

@@ -15,42 +15,50 @@ export default function Filters() {
                 <div className="filters_select">
                     <h3>Filtres</h3>
                     {/*ici lesfiltres*/}
-                    <div className="filters_select_single">
-                        <div className="z">
+                    <button className="filters_select_single">
+                        <div className="filters_select_single_div">
                             <FontAwesomeIcon
                                 icon={faMoneyBill1Wave}
-                                className="filters_select_single_icon"
+                                className="filters_select_single_div_icon"
                             />
                         </div>
-                        <span>Économique</span>
-                    </div>
-                    <div className="filters_select_single">
-                        <div className="z">
+                        <div className="filters_select_single_text">
+                            <span>Économique</span>
+                        </div>
+                    </button>
+                    <button className="filters_select_single">
+                        <div className="filters_select_single_div">
                             <FontAwesomeIcon
                                 icon={faChildReaching}
-                                className="filters_select_single_icon"
+                                className="filters_select_single_div_icon"
                             />
                         </div>
-                        <span>Familial</span>
-                    </div>
-                    <div className="filters_select_single">
-                        <div className="z">
+                        <div className="filters_select_single_text">
+                            <span>Familial</span>
+                        </div>
+                    </button>
+                    <button className="filters_select_single">
+                        <div className="filters_select_single_div">
                             <FontAwesomeIcon
                                 icon={faHeart}
-                                className="filters_select_single_icon"
+                                className="filters_select_single_div_icon"
                             />
                         </div>
-                        <span>Romantique</span>
-                    </div>
-                    <div className="filters_select_single">
-                        <div className="z">
+                        <div className="filters_select_single_text">
+                            <span>Romantique</span>
+                        </div>
+                    </button>
+                    <button className="filters_select_animaux">
+                        <div className="filters_select_animaux_div">
                             <FontAwesomeIcon
                                 icon={faDog}
-                                className="filters_select_single_icon"
+                                className="filters_select_animaux_div_icon"
                             />
                         </div>
-                        <span>Animaux autorisés</span>
-                    </div>
+                        <div className="filters_select_animaux_text">
+                            <span>Animaux autorisés</span>
+                        </div>
+                    </button>
                 </div>
             </div>
             <div className="filters_info">
