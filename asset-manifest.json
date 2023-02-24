@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/DavidIsidore/booki/static/css/main.e53bee4d.css",
+    "main.js": "/DavidIsidore/booki/static/js/main.5865416f.js",
+    "index.html": "/DavidIsidore/booki/index.html",
+    "main.e53bee4d.css.map": "/DavidIsidore/booki/static/css/main.e53bee4d.css.map",
+    "main.5865416f.js.map": "/DavidIsidore/booki/static/js/main.5865416f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e53bee4d.css",
+    "static/js/main.5865416f.js"
+  ]
+}
