@@ -3,6 +3,8 @@ import {
     faMoneyBill1Wave,
     faHeart,
     faDog,
+    faCircle,
+    faInfo,
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
@@ -62,8 +64,23 @@ export default function Filters() {
                 </div>
             </div>
             <div className="filters_info">
-                <div></div>
-                <p>Plus de 500 logements dans cette ville</p>
+                <div>
+                    <FontAwesomeIcon
+                        icon={faCircle}
+                        className="filters_info_extcircle"
+                    />
+                    <FontAwesomeIcon
+                        icon={faCircle}
+                        className="filters_info_intcircle"
+                    />
+                    <FontAwesomeIcon
+                        icon={faInfo}
+                        className="filters_info_icon"
+                    />
+                </div>
+                <p className="filters_info_text">
+                    Plus de 500 logements dans cette ville
+                </p>
             </div>
         </div>
     )

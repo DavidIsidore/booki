@@ -86,17 +86,32 @@
             background-color: $color-primary;
         }
     }
+    &_info {
+        position: relative;
+        display: flex;
+        &_extcircle {
+            position: absolute;
+            font-size: 1.2em;
+            color: $color-primary;
+        }
+        &_intcircle {
+            position: absolute;
+            font-size: 1.1em;
+            color: white;
+            left: 0.5px;
+            top: 0.7px;
+        }
+        &_icon {
+            position: absolute;
+            left: 7px;
+        }
+        &_text {
+            position: absolute;
+            left: 25px;
+        }
+    }
 }
 
 .animaux {
     width: 400px;
 }
-/*.y:hover {
-    background-color: $color-primary;
-}
-.y {
-    height: 50px;
-    display: flex;
-    align-items: center;
-    border-radius: 0 25px 25px 0;
-}*/
